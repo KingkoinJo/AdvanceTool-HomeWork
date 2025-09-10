@@ -215,6 +215,7 @@
   }
   #contact {
     font-size: 50px;
+    white-space: nowrap;
     font-weight: 450;
     margin: 0;
   }
