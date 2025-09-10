@@ -102,6 +102,105 @@
     box-shadow: 0px 2px 6px rgba(0, 872, 0, 0.9);
   }
 
+  header h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 5px;
+  }
+  header h2 {
+    margin-top: 140px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  .about {
+    margin: 140px 0 0 0;
+  }
+  header h3 {
+    margin: 5px;
+    font-weight: 500;
+  }
+  .reachOut-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-me,
+  .about-me {
+    padding: 40px 30px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin: 40px 20px;
+    cursor: pointer;
+    box-shadow: var(--shadow-effect);
+  }
+  .contact-me,
+  .launch {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 7px;
+  }
+
+  .reachOut-buttons a {
+    text-decoration: none;
+  }
+  .contact-me a {
+    color: white;
+  }
+  .about-me {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+    margin: 20px 5px;
+  }
+  .projects img,
+  .app-image {
+    max-width: 100%;
+    border-radius: 7px;
+  }
+  .launch {
+    font-size: 15px;
+    padding: 20px;
+    white-space: nowrap;
+    box-shadow: var(--shadow-effect);
+    cursor: pointer;
+  }
+  .app-name,
+  p {
+    margin: 0 0 30px;
+    padding: 0 5px;
+    text-align: left;
+  }
+  .who-i-am {
+    margin: 30px 10px;
+    text-align: center;
+  }
+  .project-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+    margin: 10px;
+  }
+  .app-images {
+    box-shadow: var(--shadow-effect);
+    padding: 5px;
+    border-radius: 7px;
+  }
+
   @media (max-width: 860px) {
     .menu {
       display: none;
@@ -148,6 +247,36 @@
     }
     .toggle.motion .bar-4 {
       transform: translateY(-20px) rotate(-405deg);
+    }
+    .project-display {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      gap: 10px;
+      margin: 10px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-gap: 10px;
+      padding: 5px;
+      margin: 20px 5px;
+    }
+    .launch,
+    .app-name,
+    .project-info p {
+      display: block;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+    .launch {
+      width: 100%;
+    }
+    .project-image {
+      display: none;
     }
     .active {
       display: flex;
